@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>hi</title>
+<link rel="icon" type="image/x-icon" href="https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/chocolate/c1a292f6711fa058c48e12e3351caa59804233be.gifv">
+<style>
+
+  body {
+    background: url('https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/chocolate/chococ21.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'MS PGothic', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container {
+  background-color: #fff;
+  width: 500px;
+  margin: 60px 0;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+
+  border-width: 7px;
+  border-style: solid;
+  border-image: url("https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/chocolate/51a-none.gif") 7 fill round;
+  box-sizing: border-box;
+}
+
+
+  .image-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #c4a78d;
+  }
+
+  .image-section img {
+    width: 100%;
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  .nav a {
+    display: block;
+    width: 130px;
+    text-align: center;
+    font-size: 0.9em;
+    text-decoration: none;
+    letter-spacing: 2px;
+    background-color: #fff;
+    color: #520013;
+    border: 1px solid #d9d0c7;
+    padding: 3px 0;
+    transition: all 0.3s ease;
+  }
+
+  .nav a:hover {
+    background-color: #e4d8cf;
+    font-weight: bold;
+  }
+
+  .menu-toggle {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255,255,255,0.95);
+    border: 1px solid #c4a78d;
+    padding: 6px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 20;
+    border-radius: 6px;
+    color: #4a3f39;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+
+  .text-section {
+    padding: 15px 25px;
+    font-size: 0.9em;
+    color: #42282d;
+    line-height: 1.4em;
+    max-height: 200px;
+    overflow-y: auto;
+    background: #fff;
+  }
+
+  li {
+    list-style-image: url('https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/chocolate/c4643f384ae638cdf5f33fa9fa7cdd8e6d0421b0.gifv');
+    margin-left: -10px;
+  }
+
+  
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(245, 236, 228, 0.9);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #d9c6b6, #b88f8a, #7a5b55);
+    border: 2px solid rgba(245, 236, 228, 0.9);
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #e6cbc4, #c19f95, #8b6560);
+  }
+
+  
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #b89e8a rgba(245, 236, 228, 0.9);
+  }
+
+  a {
+    color: #bf002d;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  p strong {
+  	color: #610113;
+  }
+
+  .footer-credit {
+    padding: 10px 20px;
+    border-top: 1px solid #e9ddd0;
+    background: linear-gradient(180deg, rgba(255,250,247,0.6), rgba(255,250,247,1));
+    font-size: 12px;
+    color: #6b5346;
+    text-align: center;
+    font-style: italic;
+  }
+  .footer-credit a {
+    color: #6b5346;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .footer-credit a:hover {
+    text-decoration: underline;
+  }
+
+ 
+  @media (max-width: 600px) {
+    .container {
+      width: 90%;
+      margin: 20px auto;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+
+    .nav {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fffaf5;
+      border-top: 1px solid #c4a78d;
+      border-bottom: 1px solid #c4a78d;
+      padding: 0 0;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 360ms cubic-bezier(.2,.9,.3,1);
+    }
+
+    .nav.show {
+      max-height: 720px;
+      transition: max-height 420ms cubic-bezier(.2,.9,.3,1);
+    }
+
+    .nav a {
+      width: 90%;
+      font-size: 0.9em;
+      border-radius: 6px;
+      margin: 8px 0;
+      padding: 8px 0;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+      opacity: 0;
+      transform: translateY(-6px);
+      transition: transform 300ms ease, opacity 300ms ease;
+    }
+
+    .nav.show a {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .text-section {
+      max-height: 150px;
+      font-size: 12px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-section">
+      <img src="https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/chocolate/miku%20carol%20cao.jpg" alt="Welcome Image">
+      <!-- Mobile menu toggle (visible only on small screens) -->
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" onclick="toggleNav(this)">☰ Menu</button>
+
+      <div class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+        <br>
+<div class="birthday-container">
+  
+    <img 
+    src="https://hauntedgraphics.carrd.co/assets/images/gallery16/7900caa0.gif?v=0f9e7fdd" 
+    alt="Happy Birthday UNC"
+    class="main-gif"
+  >
+  <img 
+    src="https://watermelon.crd.co/assets/images/gallery22/f0ff0547.gif?v=75c8e322" 
+    alt="Decoration"
+    class="bottom-gif"
+  >
+
+</div>
+
+<style>
+  .birthday-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .main-gif {
+    width: 220px;
+    height: auto;
+  }
+
+  .bottom-gif {
+    width: 120px;
+    height: auto;
+  }
+</style>
+      </div>
+    </div>
+
+    <div class="text-section">
+      <p><strong>Cakes and Candles for you, unc.</strong></p>
+      <p>Aku tak pandai untuk memulai suatu obrolan. Aku juga tak terlalu pandai untuk menata kalimat-kalimat yang sudah jenuh tersimpan dalam benakku. Untuk permulaan saja, aku sudah takut kau akan risih. Aku takut dan ikhlas bahwa mungkin kau telat membuka link ini dan membaca semua pesan yang tersirat didalamnya. Maka dari itu, aku ingin menuangkannya pelan-pelan supaya setidaknya, aku lebih lega.</p>
+      <br>
+      <p>Setahun yang lalu, aku sudah tahu bahwa kau akan berulang tahun di bulan ini. Namun saat itu aku memilih untuk tetap diam, karena menurutku, kita tak begitu dekat dan kau pun terlihat renggang dan asing kepadaku. Bahkan disaat kita berpapasan, aku masih saja gengsi untuk menyapamu. Terlebih disaat kawan-kawan usilmu terus-menerus menggodaku perihal dirimu. Aku takut kau risih. Sepenggal kata itu, risih; itulah yang selalu digaungkan oleh pikiranku sendiri kala aku mengamati air mukamu. Barangkali aku yang terlalu berburuk sangka kepadamu atau bahkan diriku, bahwa sebenarnya kau memang seorang yang pendiam dan tidak terlalu menunjukkan emosi. </p>
+      <p>Setahun yang lalu, aku sudah tahu bahwa kau akan berulang tahun di bulan ini. Namun aku malah memilih untuk diam. "Oh, untuk apa?" Pikirku saat itu. Toh, kita tak begitu dekat. Namun, ketidakacuhanku bersenggama dengan pikiran buruk yang menginap tak diundang dalam otakku, melahirkan sebuah penyesalan abstrak yang lama-kelamaan menjadi parasit. Ia menetap dan mengambil akal sehatku sebagai nutrisinya. Bahkan saat mengetik paragraf ini, akal sehatku tinggal nama. Mausoleumnya menumbuhkan bunga-bunga mawar berduri yang menjalar di pembuluh darahku.</p>
+      <br>
+      <p>Hingga perasaan itu menjalar bagai pandemi dan membuahkan pasien nolnya.</p>
+      <p>Aku bahkan menulis sepenggal puisi untuk mengabadikannya.</p>
+      <br>
+      <blockquote class="twitter-tweet"><p lang="in" dir="ltr">masih menyesal aku enggan menyalakan lilin ulang tahunmu <a href="https://t.co/TiZEeYDMUE">pic.twitter.com/TiZEeYDMUE</a></p>&mdash; razkiarkha🐟 (@jdrzkn) <a href="https://twitter.com/jdrzkn/status/2054196741264847280?ref_src=twsrc%5Etfw">May 12, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <br>
+      <p>Secuil puisi itu, kata-kata yang terajut,</p>
+      <p>Itu semua tentang kamu, Luqman.</p>
+      <br>
+      <p>Kalau aku bilang aku suka, itu lebih dari sekadar perasaan. Aku mengerti dan paham bahwa sedari awal, cara pandangmu berbeda dari yang lain. Untuk seorang pelajar seusia kita, kau seperti sudah banyak makan asam dan garam dari kebanyakan orang. Untuk menjaga perasaanmu, kurasa pernyataan "mengagumi" lebih tepat untuk diutarakan kepadamu. Karena sejatinya, aku malu ke diriku sendiri karena aku tidak sekeren kamu. Tidak sedewasa kamu, tidak seluas kamu dalam mengetahui hal-hal keren itu, aku merasa bahwa untuk berteman denganmu saja, rasanya aku terlalu banyak bicara dan mungkin, membuatmu risih.</p>
+      <p>Dan aku memahami bahwa kau memiliki duniamu sendiri. Aku dengan takzim menghargai kehidupanmu. Bahkan ketika teman-temanmu menyinggung diriku pasal dirimu saja, aku menyangkalnya. Aku tetap menyangkal walau mungkin mereka sebenarnya tahu. Walau mungkin, kamu sudah tahu. Sepanjang aku mengenakan seragam putih biru, aku mengagumi bagaimana kau begitu tenang dan unik dalam menjalani hidup yang semakin lama semakin amburadul di negara ini. Kalau dasiku runcing dan jakunku tampak-atau jika kau kesusahan untuk mencernanya, kalaupun aku dilahirkan sebagai seorang laki-laki, aku akan sangat senang untuk berteman denganmu. Bahkan mungkin bisa lebih dekat lagi denganmu.</p>
+      <p>Aku takut aku mengecewakanmu dengan tidak mendengarkan ketikanmu yang berupa wejangan di discord. Aku sangat berterimakasih karena melalui nasihatmu, aku berusaha untuk berubah menjadi lebih baik. Im still trying to be better, though, kudos to Pak Dhany for inventing that catchphrase of himself.</p>
+      <p>Kita berdua sama-sama tak begitu menyukai lingkungan sekolah, bukan? Namun, aku mengamati. Dari cerita-cerita sudut pandangmu mengenai bagaimana kehidupan sekolah kita berjalan, semakin lama senyummu turut melebar, beriringan dengan dirimu yang mencari cara untuk menghargai waktu-waktu luangmu. Dan walau tak semua teman-temanmu sefrekuensi denganmu. Aku senang ketika melihatmu berbaur dengan mereka. Itu mematahkan perkataan orang-orang mengenai dirimu yang kaku dan aneh. Heck, i dont even look at you and catch any quirk that resembles such character.</p>
+      <br>
+      <p>Maka sebelum karet jiwa ini semakin renggang dan kau mengabur dari pandanganku. Izinkan aku untuk menyalakan lilin ulang tahunmu agar aku tidak menyesal lagi. Agar aku dapat mengabadikanmu dengan jelas dalam kenanganku. Rasanya saja keberlaluanmu yang mendadak pada hari terakhir sekolah menggugahku untuk mengenalmu lebih dekat walau kau akan menjauh. Aku tak berharap lebih untukmu membaca ini. Di hari ulang tahunmu, semoga awan-awan gelap minggir supaya matahari dapat menyinarkan cahayanya yang membuncah kepadamu. Kudoakan agar kelak kau melanjutkan masa depanmu di perguruan tinggi yang kau impikan. Agar mesin motormu semakin membara dan kau dapat berkeliling menjelajah dunia menaikinya. Kudoakan kau tak selalu sendiri; bahwa tiap-tiap kucing akan mengeong kepadamu. Barangkali salah satu makhluk berbulu itu menyimpan pesan-pesan lain dariku yang tak kesampaian untuk diutarakan. Kelak jika takdir kita bertabrakan dan waktu memecahkan jam pasirnya untuk menuntun kita untuk saling bertemu, kita sudah sukses dan semakin bahagia.</p>
+    <p style="font-family: 'Times New Roman', Times, serif; font-weight: bold; text-align: justify; line-height: 1.6; color: #333333;">
+    From Arkhadiva 2026 | To Bobus | <img src="https://64.media.tumblr.com/fbb9f8e8ec2d69f54cd9d0e4f8ef196e/6a90e94a66a20764-59/s75x75_c1/ebfd9d3c0255d0d695274d1878142b6e6e7c2bda.gifv" style="vertical-align: middle; width: auto; height: 1.2em;">
+</p>
+</p>
+      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/612cnR7454vG9r5HiPujal?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+
+    </div>
+
+    <div class="footer-credit">
+      &copy; 2026 05 18th <a href="https://soundcloud.com/jdrzkn">JDRZKN</a>.
+    </div>
+  </div>
+
+<script>
+  function toggleNav(button) {
+    const nav = document.getElementById('main-nav');
+    const isOpen = nav.classList.toggle('show');
+    button.setAttribute('aria-expanded', String(isOpen));
+    button.textContent = isOpen ? '✕ Close' : '☰ Menu';
+  }
+  (function() {
+    const nav = document.getElementById('main-nav');
+    const btn = document.querySelector('.menu-toggle');
+
+    function checkWidth() {
+      if (window.innerWidth > 600) {
+        nav.classList.remove('show');
+        if (btn) {
+          btn.setAttribute('aria-expanded', 'false');
+          btn.textContent = '☰ Menu';
+        }
+      }
+    }
+
+    window.addEventListener('resize', checkWidth);
+    checkWidth();
+  })();
+</script>
+</body>
+</html>
